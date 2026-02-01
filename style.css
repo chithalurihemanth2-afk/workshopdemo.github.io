@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  position: fixed;
+  width: 100%;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.hero p {
+  margin: 15px 0;
+  color: #94a3b8;
+}
+
+.hero button {
+  padding: 12px 30px;
+  border: none;
+  background: #38bdf8;
+  color: #0f172a;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* Sections */
+.section {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+
+.section p {
+  max-width: 600px;
+  margin: auto;
+  color: #94a3b8;
+}
+
+.dark {
+  background: #020617;
+}
+
+/* About Grid */
+.info-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.info-box {
+  padding: 30px;
+  background: #1e293b;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.info-box:hover {
+  transform: translateY(-8px);
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background: #1e293b;
+  padding: 40px;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Contact */
+.contact-btn {
+  margin-top: 20px;
+  padding: 12px 35px;
+  background: transparent;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #020617;
+  color: #64748b;
+}
